@@ -6,7 +6,7 @@
     "Michal Wasiluk"
   ],
   "description": "angular directive for annotator.js",
-  "main": "./src/angular-annotator.js",
+  "main": "src/angular-annotator.js",
   "keywords": [
     "angular",
     "annotator"
