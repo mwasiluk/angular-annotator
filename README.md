@@ -21,12 +21,13 @@ You can install this package through `Bower` by using the following command :
 ## Usage
 
 Basic:
-    `<div mw-annotator></div>`
+
+    <div mw-annotator></div>
 
 You can optionally specify annotator.js options:
-    `<div mw-annotator="options"></div>`
+
+    <div mw-annotator="options"></div>
 
 You can enable annotator [plugins](http://docs.annotatorjs.org/en/v1.2.x/plugins/auth.html)  e.g.:
-    `<div mw-annotator annotator-tags="{}" annotator-permissions="{user: 'Alice'}" annotator-store="storeOptions" annotator-filter="filterOptions" annotatorMarkdown="true"></div>`
 
-
+    <div mw-annotator annotator-tags="{}" annotator-permissions="{user: 'Alice'}" annotator-store="storeOptions" annotator-filter="filterOptions" annotatorMarkdown="true"></div>
