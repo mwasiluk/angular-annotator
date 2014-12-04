@@ -1,0 +1,26 @@
+{
+  "name": "angular-annotator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mwasiluk/angular-annotator",
+  "authors": [
+    "Michal Wasiluk"
+  ],
+  "description": "angular directive for annotator.js",
+  "main": "./src/angular-annotator.js",
+  "keywords": [
+    "angular",
+    "annotator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+     "angular": ">=1.2.x",
+      "jquery": ">=1.6.x"
+  }
+}
