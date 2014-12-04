@@ -28,8 +28,13 @@ angular.module('mwAnnotator').directive('mwAnnotator', function () {
             }
 
             if(attrs.annotatorFilter){
-                var filterOptions = scope.$eval(attrs.annotatorStore);
+                var filterOptions = scope.$eval(attrs.annotatorFilter);
                 annotator.addPlugin('Filter', filterOptions);
+            }
+
+            if(attrs.annotatorAuth){
+                var authOptions = scope.$eval(attrs.annotatorAuth);
+                annotator.addPlugin('Auth', authOptions);
             }
 
 
