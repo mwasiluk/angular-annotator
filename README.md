@@ -18,6 +18,10 @@ You can install this package through `Bower` by using the following command :
 
     bower install angular-annotator
 
+## Demo
+
+[Plunker demo](http://embed.plnkr.co/yF8qWbSmL7WvfydE0kfC/preview)
+
 ## Usage
 
 Basic:
