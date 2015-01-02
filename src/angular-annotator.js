@@ -42,7 +42,33 @@ angular.module('mwAnnotator').directive('mwAnnotator', function () {
                 annotator.addPlugin('Markdown');
             }
 
+            if(attrs.annotatorPlugins){
+                var pluginList = scope.$eval(attrs.annotatorPlugins);
+                if(pluginList instanceof Array){
+                    for(var i=0; i<pluginList.length; i++){
+                        var plugin = pluginList[i];
 
+
+                        var pluginName = null;
+                        var pluginOptions = null;
+                        if(typeof plugin === 'object'){
+                            pluginName = plugin.name;
+                            pluginOptions = plugin.options;
+                        }else if(typeof plugin === 'string'){
+                            pluginName = plugin;
+                        }
+                        if(pluginName){
+                            if(!pluginOptions){
+                                annotator.addPlugin(pluginName)
+                            }else{
+                                annotator.addPlugin(pluginName, pluginOptions);
+                            }
+
+                        }
+
+                    }
+                }
+            }
         }
     };
 });
