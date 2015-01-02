@@ -31,3 +31,7 @@ You can optionally specify annotator.js options:
 You can enable annotator [plugins](http://docs.annotatorjs.org/en/v1.2.x/plugins/index.html)  e.g.:
 
     <div mw-annotator annotator-tags="{}" annotator-permissions="{user: 'Alice'}" annotator-store="storeOptions" annotator-filter="filterOptions" annotatorMarkdown="true"></div>
+
+You can also enable any custom plugins  e.g.:
+
+    <div mw-annotator annotator-plugins="[{name: 'Store', options: storeOptions}, 'Tags', 'AnnotatorViewer']"></div>
