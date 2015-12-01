@@ -3,8 +3,6 @@ angular-annotator
 
 An angularjs directive that wraps [annotator.js](http://annotatorjs.org) functionality.
 
-This is WIP so expect breaking changes!
-
 
 ## Requirements
 
